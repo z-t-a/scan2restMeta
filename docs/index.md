@@ -1,2 +1,3 @@
-## Scan2Rest Einstellungsdetails
+## Einstellungsdetails
+
 
