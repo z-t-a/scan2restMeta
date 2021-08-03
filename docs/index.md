@@ -23,3 +23,34 @@ Zeichenkette | Bedeutung
 `<variable>` | Der erste Parametername in der REST-URL; ändert sich bei sukzessiven REST-Calls nie.
 `<value>` | Der erste Parameterwert in der REST-URL; ändert sich in der Regel bei sukzessiven REST-Calls.
 
+## HTTP-Response vom Server
+
+Die vom Server zurückgeschickte HTTP-Response wird in JSON dargestellt und hat das folgende allgemeine Format.
+
+```JSON
+{
+  "success": <response_bool>,
+  "response": "<response_text>"
+}
+
+```
+
+Das Format ist so zu verstehen:
+
+Zeichenkette | Bedeutung
+------------ | -------------
+`<response_bool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
+`<response_text>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
+
+Eine Response kann zum Beispiel so aussehen:
+
+
+```JSON
+{
+  "success": 1,
+  "response": "Material erfolgreich geprüft."
+}
+
+```
+
+
