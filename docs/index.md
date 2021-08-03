@@ -18,7 +18,7 @@ Die Parameterübergabe des HTTP-Requests muss folgendem Format entprechen:
 Das Format beinhaltet ein paar von `<` und `>` umschlossene Zeichenketten, die wie folgt zu verstehen sind; alle anderen Zeichen stehen für sich selbst und dürfen nicht ersätzt werden:
 
 Zeichenkette | Bedeutung
------------- | -------------
+------------ | :------------
 `<URL>` | Die im Client konfigurierte Server-URL.
 `<variable>` | Der erste Parametername in der REST-URL; ändert sich bei sukzessiven REST-Calls nie.
 `<value>` | Der erste Parameterwert in der REST-URL; ändert sich in der Regel bei sukzessiven REST-Calls.
@@ -38,7 +38,7 @@ Die vom Server zurückgeschickte HTTP-Response wird in JSON dargestellt und hat 
 Das Format ist so zu verstehen:
 
 Zeichenkette | Bedeutung
------------- | -------------
+------------ | :------------
 `<response_bool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
 `<response_text>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
 
