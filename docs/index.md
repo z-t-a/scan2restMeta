@@ -8,9 +8,9 @@ Hierzu kannst du selbst einen Code erstellen, der diese Zeichenkette repräsenti
 
 ![Scannen des Codes öffnet das Einstellungsmenü](scan2rest-settings.png)
 
-## Parameter�bergabe an den Server
+## Parameterübergabe an den Server
 
-Die Parameter�bergabe des HTTP-Requests muss folgendem Format entprechen: 
+Die Parameterübergabe des HTTP-Requests muss folgendem Format entprechen: 
 
 - `URL/<variable>=<value>/...`
 
