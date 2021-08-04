@@ -23,7 +23,7 @@ Zeichenkette | Bedeutung     | Beispiel
 `<scannerName>`  | Der Name des Scanners (ändert sich bei sukzessiven REST-Calls nie). | Beliebige alphanumerische Zeichenkette, zB. `Raum10`
 `<scannedValue>` | Der gescannnte Wert (ändert sich in der Regel bei sukzessiven REST-Calls). | Beliebige Zeichenkette, zB. `42`
 
-Eine Response kann zum Beispiel so aussehen:
+Eine valide URL kann zum Beispiel so aussehen:
 
 - `http://my-web-url-example.de:12345/api/Scan2Rest?scanner=DerScannerInRaum3&code=42`
 
@@ -46,7 +46,7 @@ Zeichenkette | Bedeutung
 `<response_bool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
 `<response_text>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
 
-Eine Response kann zum Beispiel so aussehen:
+Eine valide Response kann zum Beispiel so aussehen:
 
 
 ```JSON
