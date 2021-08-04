@@ -33,8 +33,8 @@ Die vom Server zurückgeschickte HTTP-Response wird in JSON dargestellt und hat 
 
 ```JSON
 {
-  "success": <response_bool>,
-  "response": "<response_text>"
+  "success": <responseBool>,
+  "response": "<responseText>"
 }
 
 ```
@@ -43,8 +43,8 @@ Das Format ist so zu verstehen:
 
 Zeichenkette | Bedeutung
 :----------- | :------------
-`<response_bool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
-`<response_text>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
+`<responseBool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
+`<responseText>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
 
 Eine valide Response kann zum Beispiel so aussehen:
 
