@@ -43,7 +43,7 @@ Das Format ist so zu verstehen:
 
 Zeichenkette | Bedeutung
 :----------- | :------------
-`<responseBool>` | Entweder eine textuelle `1` falls erfolgreich, oder eine textuelle `0` falls nicht erfolgreich.
+`<responseBool>` | Entweder eine textuelle `1` falls erfolgreich (im Client als erfolgreich vermerkt), oder eine textuelle `0` falls nicht erfolgreich (im Client als Fehler vermerkt).
 `<responseText>` | Eine Nachricht an den Client, die an den Benutzer weitergegeben werden soll.
 
 Eine valide Response kann zum Beispiel so aussehen:
