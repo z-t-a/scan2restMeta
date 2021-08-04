@@ -12,16 +12,20 @@ Hierzu kannst du selbst einen Code erstellen, der diese Zeichenkette repräsenti
 
 Die Parameterübergabe des HTTP-Requests muss folgendem Format entprechen: 
 
-- `<URL>/<variable>=<value>/...`
+- `<URL>?scanner=<scannerName>&code=<scannedValue>`
 
 
 Das Format beinhaltet ein paar von `<` und `>` umschlossene Zeichenketten, die wie folgt zu verstehen sind; alle anderen Zeichen stehen für sich selbst und dürfen nicht ersätzt werden:
 
-Zeichenkette | Bedeutung
-:----------- | :------------
-`<URL>` | Die im Client konfigurierte Server-URL.
-`<variable>` | Der erste Parametername in der REST-URL; ändert sich bei sukzessiven REST-Calls nie.
-`<value>` | Der erste Parameterwert in der REST-URL; ändert sich in der Regel bei sukzessiven REST-Calls.
+Zeichenkette | Bedeutung     | Beispiel
+:----------- | :------------ | :------------
+`<URL>`          | Die im Client konfigurierte URL des empfangenden Servers. | `http://my-web-url-example.de:12345/api/Scan2Rest`
+`<scannerName>`  | Der Name des Scanners (ändert sich bei sukzessiven REST-Calls nie). | Beliebige alphanumerische Zeichenkette, zB. `Raum10`
+`<scannedValue>` | Der gescannnte Wert (ändert sich in der Regel bei sukzessiven REST-Calls). | Beliebige Zeichenkette, zB. `42`
+
+Eine Response kann zum Beispiel so aussehen:
+
+- `http://my-web-url-example.de:12345/api/Scan2Rest?scanner=DerScannerInRaum3&code=42`
 
 ## HTTP-Response vom Server
 
